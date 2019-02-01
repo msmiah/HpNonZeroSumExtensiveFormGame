@@ -33,7 +33,15 @@ public class CreateTree {
 	private ArrayList<Double> modificationCost;
 
 	private boolean isModifyRealSystem = false;
-	private boolean isModifyBothSystem = true;
+	private boolean isModifyBothSystem = false;
+	private double[] realFeatureDistribution ;//= new double[(int)Math.pow(2.0,(double) Utils.REAL_HOST_FEATURES_NUM)];
+	private double[] honeypotFeatureDistribution;// = new double[(int)Math.pow(2.0,(double) Utils.REAL_HOST_FEATURES_NUM)];
+	public CreateTree(String filename, boolean isModifyBOth, double[] realProb, double[] hpProb) {
+		createGambitFile = new CreateGambitEFGFile(filename);
+		isModifyBothSystem = isModifyBOth;
+		realFeatureDistribution = realProb;
+		honeypotFeatureDistribution = hpProb;
+	}
 
 	public void init() { 
 		mOutcomeCnt = 0;
@@ -43,7 +51,6 @@ public class CreateTree {
 		mChanceNodeProbablityList = new ArrayList();
 		featuresVector = new ArrayList();
 		modificationCost = new ArrayList();
-		createGambitFile = new CreateGambitEFGFile("hsg_4_features");
 		mBinarytoIntNumbers = new Hashtable<>(); 
 		realSystemValues = new Hashtable<>();
 		realSystemProbabilities = new Hashtable<>();
@@ -51,20 +58,28 @@ public class CreateTree {
 		honeypotProbabilites = new Hashtable<>();
 		p2InformationSet = new Hashtable<>();
 		setSystemValues();
-		int numChanceNode = (int)Math.pow(2.0,(double) mTotalFeatures)*2;
-		double[] prob = generateRandomProbability(numChanceNode);
-		for (int i = 0; i < prob.length; i++) {
-			//double tmp = (Math.round(prob[i] * 100.0)) / 100.0; //Random nature probability generation
-			double tmp = ((1.0/prob.length) * 100.0) / 100.0;
-			//System.out.println(tmp);
-			//mChanceNodeProbablityList.add(tmp);
-		}
+		double sumR = 0.0;
+		double sumHp = 0.0;
+		  for (int i = 0; i < honeypotFeatureDistribution.length ; i++) { 
+			  //realFeatureDistribution[i] = (Math.round(realFeatureDistribution[i] *100.0)) / 100.0; //Random nature probability generation 
+			  //honeypotFeatureDistribution[i] = (Math.round(honeypotFeatureDistribution[i] *100.0)) / 100.0;
+		  //((1.0/prob.length) * 100.0) / 100.0; 
+		 System.out.print(realFeatureDistribution[i]);
+		// System.out.print(honeypotFeatureDistribution[i]);
+			  
+		 //mChanceNodeProbablityList.add(tmp); 
+			  sumR += realFeatureDistribution[i];
+			  sumHp += honeypotFeatureDistribution[i];
+		 }
+		System.out.println(sumR + " : " + sumHp);
 		//setP2InformationSet();
 		setModificationCost();
-		setProbability();
+		
+		
 		generateBinaryRepresentation(0, Utils.REAL_HOST_FEATURES_NUM,realHostConfigList);
 		generateBinaryRepresentation(0, Utils.TOTAL_FEATUES_NUMBER_IN_GAME, featuresVector);
-		
+		setProbability(1);
+		//setProbability();
 		generateNatureActions(Utils.TOTAL_FEATUES_NUMBER_IN_GAME);
 		//generateNatureActions();
 		
@@ -73,12 +88,6 @@ public class CreateTree {
 		createGambitFile.createChanceNode(mChanceNode.getNodeName(), mChanceNode.getInfoSetNumber(),
 				mChanceNode.getActionsList(), mChanceNode.getProbabilitiees(), 0);
 
-		/*
-		 * mChnaceNodeActionList.add("A"); mChnaceNodeActionList.add("B");
-		 * mChanceNodeProbablityList.add(0.5); mChanceNodeProbablityList.add(0.5);
-		 * createGambitFile.createChanceNode("c", 1, mChnaceNodeActionList,
-		 * mChanceNodeProbablityList, 0);
-		 */
 		movePlayerOne();
 	}
 	
@@ -86,9 +95,21 @@ public class CreateTree {
 	public void setModificationCost() {
 
 		
-			modificationCost.add(1.0); // HP system modification cost
-			modificationCost.add(5.0); // real modification cost
+			modificationCost.add(3.0); // HP system modification cost
+			modificationCost.add(6.0); // real modification cost
 		}
+	
+	public void setProbability(int numberOfFeature) {
+		realSystemProbabilities.clear();
+		honeypotProbabilites.clear();
+		for(int i =0 ; i<realHostConfigList.size();i++) {
+			//System.out.println(realHostConfigList.get(i) + ":" + realFeatureDistribution[i]);
+			 //System.out.println(honeypotFeatureDistribution[i]);
+			realSystemProbabilities.put(realHostConfigList.get(i), realFeatureDistribution[i]);
+			honeypotProbabilites.put(realHostConfigList.get(i), honeypotFeatureDistribution[i]);
+		}
+			
+	}
 	 
 	public void setProbability() {   
 		
@@ -100,15 +121,16 @@ public class CreateTree {
 			honeypotProbabilites.put("1", 1.0);
 		} else if (Utils.REAL_HOST_FEATURES_NUM == 2) {
 
-			realSystemProbabilities.put("00", 0.1);
-			realSystemProbabilities.put("01", 0.7);
-			realSystemProbabilities.put("10", 0.2);
-			realSystemProbabilities.put("11", 0.1);
 
-			honeypotProbabilites.put("00", 0.1);
-			honeypotProbabilites.put("01", 0.1);
-			honeypotProbabilites.put("10", 0.7);
-			honeypotProbabilites.put("11", 0.1);
+			realSystemProbabilities.put("00", 0.45);
+			realSystemProbabilities.put("01", 0.17);
+			realSystemProbabilities.put("10", 0.12);
+			realSystemProbabilities.put("11", 0.25);
+
+			honeypotProbabilites.put("00", 0.41);
+			honeypotProbabilites.put("01", 0.32);
+			honeypotProbabilites.put("10", 0.08);
+			honeypotProbabilites.put("11", 0.19);
 		} else if (Utils.REAL_HOST_FEATURES_NUM == 3) {
 
 			realSystemProbabilities.put("000", 0.1); 

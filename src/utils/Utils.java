@@ -7,8 +7,8 @@ public class Utils {
 	public static final int ATTACKER_INFO_SET_NUMBER = 2;
 	public static final int PLAYER_ONE = DEFENDER_INFO_SET_NUMBER;
 	public static final int PLAYER_TWO = ATTACKER_INFO_SET_NUMBER;
-	public static final int TOTAL_NUM_OF_REAL_HOST= 2;
-	public static final int TOTAL_NUM_OF_HONEYPOT = 2;
+	public static final int TOTAL_NUM_OF_REAL_HOST= 1;
+	public static final int TOTAL_NUM_OF_HONEYPOT = 1;
 	public static final int REAL_HOST_FEATURES_NUM = 2;
 	public static final int HONEYPOT_FEATURES_NUM = REAL_HOST_FEATURES_NUM;
 	public static final int TOTAL_FEATUES_NUMBER_IN_GAME = (REAL_HOST_FEATURES_NUM * TOTAL_NUM_OF_REAL_HOST) + (HONEYPOT_FEATURES_NUM * TOTAL_NUM_OF_HONEYPOT);

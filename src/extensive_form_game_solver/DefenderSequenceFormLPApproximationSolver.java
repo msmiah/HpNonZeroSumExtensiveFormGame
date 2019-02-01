@@ -197,6 +197,9 @@ public class DefenderSequenceFormLPApproximationSolver<E> extends ZeroSumGameSol
 
 	}
 
+	public double getGameValue() {
+		return valueOfGame;
+	}
 	/**
 	 * Tries to solve the current model. Currently relies on CPLEX to throw an
 	 * exception if no model has been built.
@@ -456,7 +459,7 @@ public class DefenderSequenceFormLPApproximationSolver<E> extends ZeroSumGameSol
 	 */
 	private void CreateSequenceFormIds(int currentNodeId, TIntSet visitedP1, TIntSet visitedP2) {
 		Node node = game.getNodeById(currentNodeId);
-		if (node.isLeaf())
+		if (null == node || node.isLeaf())
 			return;
 
 		for (Action action : node.getActions()) {
