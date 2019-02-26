@@ -1,0 +1,180 @@
+...............Defender's strategy................
+I_root: 	1.0
+I:0  action:0000: 	1.0
+I:0  action:0001: 	0.0
+I:0  action:0010: 	0.0
+I:0  action:0100: 	0.0
+I:0  action:1000: 	0.0
+I:1  action:0001: 	0.08928571428571427
+I:1  action:0000: 	0.0
+I:1  action:0011: 	0.9107142857142857
+I:1  action:0101: 	0.0
+I:1  action:1001: 	0.0
+I:2  action:0010: 	1.0
+I:2  action:0011: 	0.0
+I:2  action:0000: 	0.0
+I:2  action:0110: 	0.0
+I:2  action:1010: 	0.0
+I:3  action:0011: 	1.0
+I:3  action:0010: 	0.0
+I:3  action:0001: 	0.0
+I:3  action:0111: 	0.0
+I:3  action:1011: 	0.0
+I:4  action:0100: 	1.0
+I:4  action:0101: 	0.0
+I:4  action:0110: 	0.0
+I:4  action:0000: 	0.0
+I:4  action:1100: 	0.0
+I:5  action:0101: 	0.0
+I:5  action:0100: 	0.0
+I:5  action:0111: 	1.0
+I:5  action:0001: 	0.0
+I:5  action:1101: 	0.0
+I:6  action:0110: 	0.0
+I:6  action:0111: 	1.0
+I:6  action:0100: 	0.0
+I:6  action:0010: 	0.0
+I:6  action:1110: 	0.0
+I:7  action:0111: 	1.0
+I:7  action:0110: 	0.0
+I:7  action:0101: 	0.0
+I:7  action:0011: 	0.0
+I:7  action:1111: 	0.0
+I:8  action:1000: 	1.0
+I:8  action:1001: 	0.0
+I:8  action:1010: 	0.0
+I:8  action:1100: 	0.0
+I:8  action:0000: 	0.0
+I:9  action:1001: 	0.0
+I:9  action:1000: 	0.0
+I:9  action:1011: 	1.0
+I:9  action:1101: 	0.0
+I:9  action:0001: 	0.0
+I:10  action:1010: 	0.7450592885375493
+I:10  action:1011: 	0.0
+I:10  action:1000: 	0.2549407114624506
+I:10  action:1110: 	0.0
+I:10  action:0010: 	0.0
+I:11  action:1011: 	1.0
+I:11  action:1010: 	0.0
+I:11  action:1001: 	0.0
+I:11  action:1111: 	0.0
+I:11  action:0011: 	0.0
+I:12  action:1100: 	1.0
+I:12  action:1101: 	0.0
+I:12  action:1110: 	0.0
+I:12  action:1000: 	0.0
+I:12  action:0100: 	0.0
+I:13  action:1101: 	0.2056277056277056
+I:13  action:1100: 	0.0
+I:13  action:1111: 	0.7943722943722944
+I:13  action:1001: 	0.0
+I:13  action:0101: 	0.0
+I:14  action:1110: 	0.3550724637681159
+I:14  action:1111: 	0.6310935441370225
+I:14  action:1100: 	0.013833992094861651
+I:14  action:1010: 	0.0
+I:14  action:0110: 	0.0
+I:15  action:1111: 	1.0
+I:15  action:1110: 	0.0
+I:15  action:1101: 	0.0
+I:15  action:1011: 	0.0
+I:15  action:0111: 	0.0
+...............Attacker's strategy................
+I:0  action:00: 	1.0
+I:1  action:00: 	1.0
+I:1  action:01: 	0.0
+I:2  action:00: 	1.0
+I:2  action:10: 	0.0
+I:3  action:00: 	1.0
+I:3  action:11: 	0.0
+I:5  action:01: 	1.0
+I:6  action:10: 	1.0
+I:6  action:01: 	0.0
+I:10  action:10: 	1.0
+I:7  action:01: 	1.0
+I:7  action:11: 	0.0
+I:11  action:10: 	1.0
+I:11  action:11: 	0.0
+I:15  action:11: 	1.0
+............... Z variables................
+I:0  action:0000 -> I:0  action:00: 	1.0
+I:0  action:0001 -> I:1  action:01: 	0.0
+I:0  action:0010 -> I:2  action:10: 	0.0
+I:0  action:0100 -> I:1  action:00: 	0.0
+I:0  action:1000 -> I:2  action:00: 	0.0
+I:1  action:0001 -> I:1  action:01: 	0.0
+I:1  action:0000 -> I:0  action:00: 	0.0
+I:1  action:0011 -> I:3  action:11: 	0.0
+I:1  action:0101 -> I:5  action:01: 	0.0
+I:1  action:1001 -> I:6  action:01: 	0.0
+I:2  action:0010 -> I:2  action:10: 	0.0
+I:2  action:0011 -> I:3  action:11: 	0.0
+I:2  action:0000 -> I:0  action:00: 	0.0
+I:2  action:0110 -> I:6  action:10: 	0.0
+I:2  action:1010 -> I:10  action:10: 	0.0
+I:3  action:0011 -> I:3  action:11: 	0.0
+I:3  action:0010 -> I:2  action:10: 	0.0
+I:3  action:0001 -> I:1  action:01: 	0.0
+I:3  action:0111 -> I:7  action:11: 	0.0
+I:3  action:1011 -> I:11  action:11: 	0.0
+I:4  action:0100 -> I:1  action:00: 	1.0
+I:4  action:0101 -> I:5  action:01: 	0.0
+I:4  action:0110 -> I:6  action:10: 	0.0
+I:4  action:0000 -> I:0  action:00: 	0.0
+I:4  action:1100 -> I:3  action:00: 	0.0
+I:5  action:0101 -> I:5  action:01: 	0.0
+I:5  action:0100 -> I:1  action:00: 	0.0
+I:5  action:0111 -> I:7  action:11: 	0.0
+I:5  action:0001 -> I:1  action:01: 	0.0
+I:5  action:1101 -> I:7  action:01: 	0.0
+I:6  action:0110 -> I:6  action:10: 	0.0
+I:6  action:0111 -> I:7  action:11: 	0.0
+I:6  action:0100 -> I:1  action:00: 	0.0
+I:6  action:0010 -> I:2  action:10: 	0.0
+I:6  action:1110 -> I:11  action:10: 	0.0
+I:7  action:0111 -> I:7  action:11: 	0.0
+I:7  action:0110 -> I:6  action:10: 	0.0
+I:7  action:0101 -> I:5  action:01: 	0.0
+I:7  action:0011 -> I:3  action:11: 	0.0
+I:7  action:1111 -> I:15  action:11: 	0.0
+I:8  action:1000 -> I:2  action:00: 	1.0
+I:8  action:1001 -> I:6  action:01: 	0.0
+I:8  action:1010 -> I:10  action:10: 	0.0
+I:8  action:1100 -> I:3  action:00: 	0.0
+I:8  action:0000 -> I:0  action:00: 	0.0
+I:9  action:1001 -> I:6  action:01: 	0.0
+I:9  action:1000 -> I:2  action:00: 	0.0
+I:9  action:1011 -> I:11  action:11: 	0.0
+I:9  action:1101 -> I:7  action:01: 	0.0
+I:9  action:0001 -> I:1  action:01: 	0.0
+I:10  action:1010 -> I:10  action:10: 	0.7450592885375493
+I:10  action:1011 -> I:11  action:11: 	0.0
+I:10  action:1000 -> I:2  action:00: 	0.2549407114624506
+I:10  action:1110 -> I:11  action:10: 	0.0
+I:10  action:0010 -> I:2  action:10: 	0.0
+I:11  action:1011 -> I:11  action:11: 	0.0
+I:11  action:1010 -> I:10  action:10: 	0.0
+I:11  action:1001 -> I:6  action:01: 	0.0
+I:11  action:1111 -> I:15  action:11: 	0.0
+I:11  action:0011 -> I:3  action:11: 	0.0
+I:12  action:1100 -> I:3  action:00: 	1.0
+I:12  action:1101 -> I:7  action:01: 	0.0
+I:12  action:1110 -> I:11  action:10: 	0.0
+I:12  action:1000 -> I:2  action:00: 	0.0
+I:12  action:0100 -> I:1  action:00: 	0.0
+I:13  action:1101 -> I:7  action:01: 	0.2056277056277056
+I:13  action:1100 -> I:3  action:00: 	0.0
+I:13  action:1111 -> I:15  action:11: 	0.7943722943722944
+I:13  action:1001 -> I:6  action:01: 	0.0
+I:13  action:0101 -> I:5  action:01: 	0.0
+I:14  action:1110 -> I:11  action:10: 	0.3550724637681159
+I:14  action:1111 -> I:15  action:11: 	0.6310935441370225
+I:14  action:1100 -> I:3  action:00: 	0.013833992094861651
+I:14  action:1010 -> I:10  action:10: 	0.0
+I:14  action:0110 -> I:6  action:10: 	0.0
+I:15  action:1111 -> I:15  action:11: 	1.0
+I:15  action:1110 -> I:11  action:10: 	0.0
+I:15  action:1101 -> I:7  action:01: 	0.0
+I:15  action:1011 -> I:11  action:11: 	0.0
+I:15  action:0111 -> I:7  action:11: 	0.0

@@ -15,21 +15,36 @@ import utils.Utils;
 
 
 /**
- * @author IASRLUser
+ * @author IASRLUserv     
  *
  */
 public class TestMain {
 
 	public static void main(String[] args) throws IOException {
+		EMD objEMD = new EMD();
 		int numOfSimulation = 100;
 		int possibleCombination = (int) Math.pow(2.0, (double) Utils.REAL_HOST_FEATURES_NUM);
-		//writeFeatureDistribution(possibleCombination,numOfSimulation);
+	//	writeFeatureDistribution(possibleCombination,numOfSimulation);
 		double[][][] distributions = readDistributions("featuredristibution.txt",numOfSimulation,possibleCombination);
 		double gameValue = 0.0;
+		/*
+		double[][] distances = createDistanceArray(possibleCombination);
+		FileWriter fwForDistanc = new FileWriter("distance.csv");
+		for(int i=0; i< numOfSimulation; i++) {
+			try {
+				fwForDistanc.write(objEMD.distance(distances, distributions[i][0], distributions[i][1]) + "\n");
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		fwForDistanc.close();
+		*/
+		
 		FileWriter fw = new FileWriter("resultsboth.csv");
 		//FileWriter fw = new FileWriter("resultshp.csv");
 			for (int i = 0; i < numOfSimulation; i++) {
-				Game experimentGame = generateGameTree(true, distributions[i]);
+				Game experimentGame = generateGameTree(true  , distributions[i]);
 				DefenderSequenceFormLPApproximationSolver equilibriumSolver = new DefenderSequenceFormLPApproximationSolver(
 						experimentGame, 1);
 				// StackleBergNaiveSolver stSolver = new StackleBergNaiveSolver<>(drpGame, 1);
@@ -42,7 +57,7 @@ public class TestMain {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				String resultRes =calculateDistance(distributions[i][0], distributions[i][1]) + "," + gameValue;
+				String resultRes =calculateIndexDistance(distributions[i][0], distributions[i][1],possibleCombination) + "," + gameValue;
 				try {
 					fw.write(resultRes + "\n");
 				} catch (IOException e) {
@@ -212,5 +227,62 @@ public class TestMain {
         }
         return Math.sqrt(Sum);
     }
+	public static double calculateDistanceFromUniformRandom(double[] array1, double[] array2, int n)
+    {
+        double Sum = 0.0;
+        for(int i=0;i<array1.length;i++) {
+           Sum = Sum + Math.pow((1.0/n-array1[i]),2.0) + Math.pow((1.0/n-array2[i]),2.0);
+        }
+        return Math.sqrt(Sum);
+    }
+	public static double calculateDistanceL3Norm(double[] array1, double[] array2)
+    {
+        double Sum = 0.0;
+        for(int i=0;i<array1.length;i++) {
+           Sum = Sum + Math.abs(Math.pow((array1[i]-array2[i]),3.0));
+        }
+        return Math.cbrt(Sum);
+    }
+	public static double distanceInfiniteNorm(double[] array1, double[] array2) {
+		 double Sum = 0.0;
+	        for(int i=0;i<array1.length;i++) {
+	           Sum = Math.max(Sum,Math.abs(array1[i]-array2[i]));
+	        }
+	        return Sum;
+	}
+	
+	public static double calculateIndexDistance(double[] array1, double[] array2, int n) {
+		 double Sum = 0.0;
+	        for(int i=0;i<array1.length;i++) {
+	           Sum = Sum + Math.abs(array1[i]/n-array2[i]/n);
+	        }
+	        return Sum/2;
+	}
+	
+	public static int hammingDistance(int x, int y)
+	{
+	    int dist = 0;
+	    int  val = x ^ y;
+
+	    // Count the number of bits set
+	    while (val != 0)
+	    {
+	        // A bit is set, so increment the count and clear the bit
+	        dist++;
+	        val &= val - 1;
+	    }
+
+	    // Return the number of differing bits
+	    return dist;
+	}
+	
+	public static double[][] createDistanceArray(int n){
+		double[][] distanceArr = new double[n][n];
+		for(int i = 0; i < n; i++)
+			for(int j =0; j < n; j++) {
+				distanceArr[i][j] = hammingDistance(i, j);
+			}
+		return distanceArr;
+	}
 
 }

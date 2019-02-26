@@ -1,0 +1,964 @@
+...............Defender's strategy................
+I_root: 	1.0
+I:0  action:000000: 	1.0
+I:0  action:000001: 	0.0
+I:0  action:000010: 	0.0
+I:0  action:000100: 	0.0
+I:0  action:001000: 	0.0
+I:0  action:010000: 	0.0
+I:0  action:100000: 	0.0
+I:1  action:000001: 	0.0
+I:1  action:000000: 	0.0
+I:1  action:000011: 	0.0
+I:1  action:000101: 	0.0
+I:1  action:001001: 	1.0
+I:1  action:010001: 	0.0
+I:1  action:100001: 	0.0
+I:2  action:000010: 	0.0
+I:2  action:000011: 	0.0
+I:2  action:000000: 	0.0
+I:2  action:000110: 	0.0
+I:2  action:001010: 	0.0
+I:2  action:010010: 	1.0
+I:2  action:100010: 	0.0
+I:3  action:000011: 	0.0
+I:3  action:000010: 	1.0
+I:3  action:000001: 	0.0
+I:3  action:000111: 	0.0
+I:3  action:001011: 	0.0
+I:3  action:010011: 	0.0
+I:3  action:100011: 	0.0
+I:4  action:000100: 	0.0
+I:4  action:000101: 	0.0
+I:4  action:000110: 	0.0
+I:4  action:000000: 	0.0
+I:4  action:001100: 	0.0
+I:4  action:010100: 	0.0
+I:4  action:100100: 	1.0
+I:5  action:000101: 	1.0
+I:5  action:000100: 	0.0
+I:5  action:000111: 	0.0
+I:5  action:000001: 	0.0
+I:5  action:001101: 	0.0
+I:5  action:010101: 	0.0
+I:5  action:100101: 	0.0
+I:6  action:000110: 	1.0
+I:6  action:000111: 	0.0
+I:6  action:000100: 	0.0
+I:6  action:000010: 	0.0
+I:6  action:001110: 	0.0
+I:6  action:010110: 	0.0
+I:6  action:100110: 	0.0
+I:7  action:000111: 	0.0
+I:7  action:000110: 	1.0
+I:7  action:000101: 	0.0
+I:7  action:000011: 	0.0
+I:7  action:001111: 	0.0
+I:7  action:010111: 	0.0
+I:7  action:100111: 	0.0
+I:8  action:001000: 	0.0
+I:8  action:001001: 	0.0
+I:8  action:001010: 	0.0
+I:8  action:001100: 	0.0
+I:8  action:000000: 	1.0
+I:8  action:011000: 	0.0
+I:8  action:101000: 	0.0
+I:9  action:001001: 	0.0
+I:9  action:001000: 	0.0
+I:9  action:001011: 	0.0
+I:9  action:001101: 	0.0
+I:9  action:000001: 	0.0
+I:9  action:011001: 	1.0
+I:9  action:101001: 	0.0
+I:10  action:001010: 	0.10101010101010101
+I:10  action:001011: 	0.5555555555555556
+I:10  action:001000: 	0.0
+I:10  action:001110: 	0.11616161616161612
+I:10  action:000010: 	0.10606060606060606
+I:10  action:011010: 	0.08585858585858586
+I:10  action:101010: 	0.03535353535353536
+I:11  action:001011: 	0.0
+I:11  action:001010: 	0.0
+I:11  action:001001: 	0.0
+I:11  action:001111: 	0.0
+I:11  action:000011: 	0.0
+I:11  action:011011: 	0.8409090909090909
+I:11  action:101011: 	0.1590909090909091
+I:12  action:001100: 	0.7272727272727272
+I:12  action:001101: 	0.022727272727272783
+I:12  action:001110: 	0.0
+I:12  action:001000: 	0.0
+I:12  action:000100: 	0.24999999999999986
+I:12  action:011100: 	0.0
+I:12  action:101100: 	0.0
+I:13  action:001101: 	0.05681818181818175
+I:13  action:001100: 	0.0
+I:13  action:001111: 	0.4545454545454549
+I:13  action:001001: 	0.0
+I:13  action:000101: 	0.029220779220779217
+I:13  action:011101: 	0.0
+I:13  action:101101: 	0.45941558441558406
+I:14  action:001110: 	0.2159090909090911
+I:14  action:001111: 	0.0
+I:14  action:001100: 	0.0
+I:14  action:001010: 	0.0
+I:14  action:000110: 	0.0
+I:14  action:011110: 	0.46969696969696956
+I:14  action:101110: 	0.31439393939393934
+I:15  action:001111: 	0.3075757575757573
+I:15  action:001110: 	0.0
+I:15  action:001101: 	0.0
+I:15  action:001011: 	0.0
+I:15  action:000111: 	0.0
+I:15  action:011111: 	0.27272727272727293
+I:15  action:101111: 	0.4196969696969698
+I:16  action:010000: 	1.0
+I:16  action:010001: 	0.0
+I:16  action:010010: 	0.0
+I:16  action:010100: 	0.0
+I:16  action:011000: 	0.0
+I:16  action:000000: 	0.0
+I:16  action:110000: 	0.0
+I:17  action:010001: 	1.0
+I:17  action:010000: 	0.0
+I:17  action:010011: 	0.0
+I:17  action:010101: 	0.0
+I:17  action:011001: 	0.0
+I:17  action:000001: 	0.0
+I:17  action:110001: 	0.0
+I:18  action:010010: 	0.0
+I:18  action:010011: 	1.0
+I:18  action:010000: 	0.0
+I:18  action:010110: 	0.0
+I:18  action:011010: 	0.0
+I:18  action:000010: 	0.0
+I:18  action:110010: 	0.0
+I:19  action:010011: 	1.0
+I:19  action:010010: 	0.0
+I:19  action:010001: 	0.0
+I:19  action:010111: 	0.0
+I:19  action:011011: 	0.0
+I:19  action:000011: 	0.0
+I:19  action:110011: 	0.0
+I:20  action:010100: 	1.0
+I:20  action:010101: 	0.0
+I:20  action:010110: 	0.0
+I:20  action:010000: 	0.0
+I:20  action:011100: 	0.0
+I:20  action:000100: 	0.0
+I:20  action:110100: 	0.0
+I:21  action:010101: 	1.0
+I:21  action:010100: 	0.0
+I:21  action:010111: 	0.0
+I:21  action:010001: 	0.0
+I:21  action:011101: 	0.0
+I:21  action:000101: 	0.0
+I:21  action:110101: 	0.0
+I:22  action:010110: 	0.0
+I:22  action:010111: 	1.0
+I:22  action:010100: 	0.0
+I:22  action:010010: 	0.0
+I:22  action:011110: 	0.0
+I:22  action:000110: 	0.0
+I:22  action:110110: 	0.0
+I:23  action:010111: 	1.0
+I:23  action:010110: 	0.0
+I:23  action:010101: 	0.0
+I:23  action:010011: 	0.0
+I:23  action:011111: 	0.0
+I:23  action:000111: 	0.0
+I:23  action:110111: 	0.0
+I:24  action:011000: 	0.0
+I:24  action:011001: 	0.0
+I:24  action:011010: 	0.0
+I:24  action:011100: 	0.0
+I:24  action:010000: 	1.0
+I:24  action:001000: 	0.0
+I:24  action:111000: 	0.0
+I:25  action:011001: 	0.0
+I:25  action:011000: 	0.0
+I:25  action:011011: 	0.0
+I:25  action:011101: 	0.0
+I:25  action:010001: 	1.0
+I:25  action:001001: 	0.0
+I:25  action:111001: 	0.0
+I:26  action:011010: 	0.0
+I:26  action:011011: 	0.0
+I:26  action:011000: 	0.0
+I:26  action:011110: 	0.0
+I:26  action:010010: 	1.0
+I:26  action:001010: 	0.0
+I:26  action:111010: 	0.0
+I:27  action:011011: 	1.0
+I:27  action:011010: 	0.0
+I:27  action:011001: 	0.0
+I:27  action:011111: 	0.0
+I:27  action:010011: 	0.0
+I:27  action:001011: 	0.0
+I:27  action:111011: 	0.0
+I:28  action:011100: 	0.0
+I:28  action:011101: 	0.0
+I:28  action:011110: 	0.0
+I:28  action:011000: 	0.0
+I:28  action:010100: 	1.0
+I:28  action:001100: 	0.0
+I:28  action:111100: 	0.0
+I:29  action:011101: 	1.0
+I:29  action:011100: 	0.0
+I:29  action:011111: 	0.0
+I:29  action:011001: 	0.0
+I:29  action:010101: 	0.0
+I:29  action:001101: 	0.0
+I:29  action:111101: 	0.0
+I:30  action:011110: 	0.0
+I:30  action:011111: 	0.0
+I:30  action:011100: 	0.0
+I:30  action:011010: 	0.0
+I:30  action:010110: 	1.0
+I:30  action:001110: 	0.0
+I:30  action:111110: 	0.0
+I:31  action:011111: 	1.0
+I:31  action:011110: 	0.0
+I:31  action:011101: 	0.0
+I:31  action:011011: 	0.0
+I:31  action:010111: 	0.0
+I:31  action:001111: 	0.0
+I:31  action:111111: 	0.0
+I:32  action:100000: 	0.0
+I:32  action:100001: 	1.0
+I:32  action:100010: 	0.0
+I:32  action:100100: 	0.0
+I:32  action:101000: 	0.0
+I:32  action:110000: 	0.0
+I:32  action:000000: 	0.0
+I:33  action:100001: 	1.0
+I:33  action:100000: 	0.0
+I:33  action:100011: 	0.0
+I:33  action:100101: 	0.0
+I:33  action:101001: 	0.0
+I:33  action:110001: 	0.0
+I:33  action:000001: 	0.0
+I:34  action:100010: 	0.2962962962962963
+I:34  action:100011: 	0.03703703703703723
+I:34  action:100000: 	0.4074074074074072
+I:34  action:100110: 	0.2592592592592593
+I:34  action:101010: 	0.0
+I:34  action:110010: 	0.0
+I:34  action:000010: 	0.0
+I:35  action:100011: 	0.0
+I:35  action:100010: 	0.0
+I:35  action:100001: 	0.0
+I:35  action:100111: 	1.0
+I:35  action:101011: 	0.0
+I:35  action:110011: 	0.0
+I:35  action:000011: 	0.0
+I:36  action:100100: 	1.0
+I:36  action:100101: 	0.0
+I:36  action:100110: 	0.0
+I:36  action:100000: 	0.0
+I:36  action:101100: 	0.0
+I:36  action:110100: 	0.0
+I:36  action:000100: 	0.0
+I:37  action:100101: 	0.21428571428571425
+I:37  action:100100: 	0.0
+I:37  action:100111: 	0.0
+I:37  action:100001: 	0.7857142857142858
+I:37  action:101101: 	0.0
+I:37  action:110101: 	0.0
+I:37  action:000101: 	0.0
+I:38  action:100110: 	1.0
+I:38  action:100111: 	0.0
+I:38  action:100100: 	0.0
+I:38  action:100010: 	0.0
+I:38  action:101110: 	0.0
+I:38  action:110110: 	0.0
+I:38  action:000110: 	0.0
+I:39  action:100111: 	1.0
+I:39  action:100110: 	0.0
+I:39  action:100101: 	0.0
+I:39  action:100011: 	0.0
+I:39  action:101111: 	0.0
+I:39  action:110111: 	0.0
+I:39  action:000111: 	0.0
+I:40  action:101000: 	1.0
+I:40  action:101001: 	0.0
+I:40  action:101010: 	0.0
+I:40  action:101100: 	0.0
+I:40  action:100000: 	0.0
+I:40  action:111000: 	0.0
+I:40  action:001000: 	0.0
+I:41  action:101001: 	1.0
+I:41  action:101000: 	0.0
+I:41  action:101011: 	0.0
+I:41  action:101101: 	0.0
+I:41  action:100001: 	0.0
+I:41  action:111001: 	0.0
+I:41  action:001001: 	0.0
+I:42  action:101010: 	0.0
+I:42  action:101011: 	0.0
+I:42  action:101000: 	0.0
+I:42  action:101110: 	1.0
+I:42  action:100010: 	0.0
+I:42  action:111010: 	0.0
+I:42  action:001010: 	0.0
+I:43  action:101011: 	1.0
+I:43  action:101010: 	0.0
+I:43  action:101001: 	0.0
+I:43  action:101111: 	0.0
+I:43  action:100011: 	0.0
+I:43  action:111011: 	0.0
+I:43  action:001011: 	0.0
+I:44  action:101100: 	1.0
+I:44  action:101101: 	0.0
+I:44  action:101110: 	0.0
+I:44  action:101000: 	0.0
+I:44  action:100100: 	0.0
+I:44  action:111100: 	0.0
+I:44  action:001100: 	0.0
+I:45  action:101101: 	1.0
+I:45  action:101100: 	0.0
+I:45  action:101111: 	0.0
+I:45  action:101001: 	0.0
+I:45  action:100101: 	0.0
+I:45  action:111101: 	0.0
+I:45  action:001101: 	0.0
+I:46  action:101110: 	1.0
+I:46  action:101111: 	0.0
+I:46  action:101100: 	0.0
+I:46  action:101010: 	0.0
+I:46  action:100110: 	0.0
+I:46  action:111110: 	0.0
+I:46  action:001110: 	0.0
+I:47  action:101111: 	1.0
+I:47  action:101110: 	0.0
+I:47  action:101101: 	0.0
+I:47  action:101011: 	0.0
+I:47  action:100111: 	0.0
+I:47  action:111111: 	0.0
+I:47  action:001111: 	0.0
+I:48  action:110000: 	0.0
+I:48  action:110001: 	0.0
+I:48  action:110010: 	0.0
+I:48  action:110100: 	0.0
+I:48  action:111000: 	0.0
+I:48  action:100000: 	0.0
+I:48  action:010000: 	1.0
+I:49  action:110001: 	1.0
+I:49  action:110000: 	0.0
+I:49  action:110011: 	0.0
+I:49  action:110101: 	0.0
+I:49  action:111001: 	0.0
+I:49  action:100001: 	0.0
+I:49  action:010001: 	0.0
+I:50  action:110010: 	0.0
+I:50  action:110011: 	0.09401709401709388
+I:50  action:110000: 	0.0
+I:50  action:110110: 	0.0
+I:50  action:111010: 	0.0
+I:50  action:100010: 	0.0
+I:50  action:010010: 	0.9059829059829061
+I:51  action:110011: 	1.0
+I:51  action:110010: 	0.0
+I:51  action:110001: 	0.0
+I:51  action:110111: 	0.0
+I:51  action:111011: 	0.0
+I:51  action:100011: 	0.0
+I:51  action:010011: 	0.0
+I:52  action:110100: 	1.0
+I:52  action:110101: 	0.0
+I:52  action:110110: 	0.0
+I:52  action:110000: 	0.0
+I:52  action:111100: 	0.0
+I:52  action:100100: 	0.0
+I:52  action:010100: 	0.0
+I:53  action:110101: 	1.0
+I:53  action:110100: 	0.0
+I:53  action:110111: 	0.0
+I:53  action:110001: 	0.0
+I:53  action:111101: 	0.0
+I:53  action:100101: 	0.0
+I:53  action:010101: 	0.0
+I:54  action:110110: 	0.0
+I:54  action:110111: 	0.0
+I:54  action:110100: 	0.0
+I:54  action:110010: 	0.0
+I:54  action:111110: 	0.0
+I:54  action:100110: 	0.0
+I:54  action:010110: 	1.0
+I:55  action:110111: 	1.0
+I:55  action:110110: 	0.0
+I:55  action:110101: 	0.0
+I:55  action:110011: 	0.0
+I:55  action:111111: 	0.0
+I:55  action:100111: 	0.0
+I:55  action:010111: 	0.0
+I:56  action:111000: 	0.0
+I:56  action:111001: 	1.0
+I:56  action:111010: 	0.0
+I:56  action:111100: 	0.0
+I:56  action:110000: 	0.0
+I:56  action:101000: 	0.0
+I:56  action:011000: 	0.0
+I:57  action:111001: 	1.0
+I:57  action:111000: 	0.0
+I:57  action:111011: 	0.0
+I:57  action:111101: 	0.0
+I:57  action:110001: 	0.0
+I:57  action:101001: 	0.0
+I:57  action:011001: 	0.0
+I:58  action:111010: 	0.10144927536231882
+I:58  action:111011: 	0.41062801932367166
+I:58  action:111000: 	0.0
+I:58  action:111110: 	0.31400966183574874
+I:58  action:110010: 	0.17391304347826084
+I:58  action:101010: 	0.0
+I:58  action:011010: 	0.0
+I:59  action:111011: 	0.0
+I:59  action:111010: 	0.0
+I:59  action:111001: 	0.0
+I:59  action:111111: 	0.0
+I:59  action:110011: 	0.0
+I:59  action:101011: 	0.0
+I:59  action:011011: 	1.0
+I:60  action:111100: 	0.9565217391304346
+I:60  action:111101: 	0.0
+I:60  action:111110: 	0.0
+I:60  action:111000: 	0.0
+I:60  action:110100: 	0.0
+I:60  action:101100: 	0.0
+I:60  action:011100: 	0.04347826086956544
+I:61  action:111101: 	1.0
+I:61  action:111100: 	0.0
+I:61  action:111111: 	0.0
+I:61  action:111001: 	0.0
+I:61  action:110101: 	0.0
+I:61  action:101101: 	0.0
+I:61  action:011101: 	0.0
+I:62  action:111110: 	0.0
+I:62  action:111111: 	0.0
+I:62  action:111100: 	0.0
+I:62  action:111010: 	0.0
+I:62  action:110110: 	1.0
+I:62  action:101110: 	0.0
+I:62  action:011110: 	0.0
+I:63  action:111111: 	1.0
+I:63  action:111110: 	0.0
+I:63  action:111101: 	0.0
+I:63  action:111011: 	0.0
+I:63  action:110111: 	0.0
+I:63  action:101111: 	0.0
+I:63  action:011111: 	0.0
+...............Attacker's strategy................
+I:0  action:000: 	1.0
+I:1  action:000: 	0.0
+I:1  action:001: 	1.0
+I:2  action:000: 	1.0
+I:2  action:010: 	0.0
+I:4  action:000: 	1.0
+I:4  action:100: 	0.0
+I:3  action:000: 	1.0
+I:3  action:011: 	0.0
+I:5  action:000: 	1.0
+I:5  action:101: 	0.0
+I:9  action:001: 	1.0
+I:10  action:010: 	1.0
+I:10  action:001: 	0.0
+I:12  action:100: 	0.0
+I:12  action:001: 	1.0
+I:6  action:000: 	1.0
+I:6  action:110: 	0.0
+I:18  action:010: 	1.0
+I:20  action:100: 	0.0
+I:20  action:010: 	1.0
+I:7  action:000: 	1.0
+I:7  action:111: 	0.0
+I:11  action:001: 	1.0
+I:11  action:011: 	0.0
+I:19  action:010: 	1.0
+I:19  action:011: 	0.0
+I:28  action:100: 	1.0
+I:28  action:011: 	0.0
+I:36  action:100: 	1.0
+I:13  action:001: 	0.0
+I:13  action:101: 	1.0
+I:21  action:010: 	0.0
+I:21  action:101: 	1.0
+I:37  action:100: 	0.0
+I:37  action:101: 	1.0
+I:14  action:001: 	0.0
+I:14  action:110: 	1.0
+I:22  action:010: 	0.0
+I:22  action:110: 	1.0
+I:38  action:100: 	0.0
+I:38  action:110: 	1.0
+I:15  action:001: 	0.0
+I:15  action:111: 	1.0
+I:23  action:010: 	0.0
+I:23  action:111: 	1.0
+I:39  action:100: 	1.0
+I:39  action:111: 	0.0
+I:27  action:011: 	1.0
+I:29  action:101: 	1.0
+I:29  action:011: 	0.0
+I:45  action:101: 	1.0
+I:30  action:011: 	0.0
+I:30  action:110: 	1.0
+I:46  action:101: 	0.0
+I:46  action:110: 	1.0
+I:31  action:011: 	1.0
+I:31  action:111: 	0.0
+I:47  action:101: 	0.0
+I:47  action:111: 	1.0
+I:54  action:110: 	1.0
+I:55  action:110: 	0.0
+I:55  action:111: 	1.0
+I:63  action:111: 	1.0
+............... Z variables................
+I:0  action:000000 -> I:0  action:000: 	1.0
+I:0  action:000001 -> I:1  action:001: 	0.0
+I:0  action:000010 -> I:2  action:010: 	0.0
+I:0  action:000100 -> I:4  action:100: 	0.0
+I:0  action:001000 -> I:1  action:000: 	0.0
+I:0  action:010000 -> I:2  action:000: 	0.0
+I:0  action:100000 -> I:4  action:000: 	0.0
+I:1  action:000001 -> I:1  action:001: 	0.0
+I:1  action:000000 -> I:0  action:000: 	0.0
+I:1  action:000011 -> I:3  action:011: 	0.0
+I:1  action:000101 -> I:5  action:101: 	0.0
+I:1  action:001001 -> I:9  action:001: 	1.0
+I:1  action:010001 -> I:10  action:001: 	0.0
+I:1  action:100001 -> I:12  action:001: 	0.0
+I:2  action:000010 -> I:2  action:010: 	0.0
+I:2  action:000011 -> I:3  action:011: 	0.0
+I:2  action:000000 -> I:0  action:000: 	0.0
+I:2  action:000110 -> I:6  action:110: 	0.0
+I:2  action:001010 -> I:10  action:010: 	0.0
+I:2  action:010010 -> I:18  action:010: 	1.0
+I:2  action:100010 -> I:20  action:010: 	0.0
+I:3  action:000011 -> I:3  action:011: 	0.0
+I:3  action:000010 -> I:2  action:010: 	0.0
+I:3  action:000001 -> I:1  action:001: 	0.0
+I:3  action:000111 -> I:7  action:111: 	0.0
+I:3  action:001011 -> I:11  action:011: 	0.0
+I:3  action:010011 -> I:19  action:011: 	0.0
+I:3  action:100011 -> I:28  action:011: 	0.0
+I:4  action:000100 -> I:4  action:100: 	0.0
+I:4  action:000101 -> I:5  action:101: 	0.0
+I:4  action:000110 -> I:6  action:110: 	0.0
+I:4  action:000000 -> I:0  action:000: 	0.0
+I:4  action:001100 -> I:12  action:100: 	0.0
+I:4  action:010100 -> I:20  action:100: 	0.0
+I:4  action:100100 -> I:36  action:100: 	1.0
+I:5  action:000101 -> I:5  action:101: 	0.0
+I:5  action:000100 -> I:4  action:100: 	0.0
+I:5  action:000111 -> I:7  action:111: 	0.0
+I:5  action:000001 -> I:1  action:001: 	0.0
+I:5  action:001101 -> I:13  action:101: 	0.0
+I:5  action:010101 -> I:21  action:101: 	0.0
+I:5  action:100101 -> I:37  action:101: 	0.0
+I:6  action:000110 -> I:6  action:110: 	0.0
+I:6  action:000111 -> I:7  action:111: 	0.0
+I:6  action:000100 -> I:4  action:100: 	0.0
+I:6  action:000010 -> I:2  action:010: 	0.0
+I:6  action:001110 -> I:14  action:110: 	0.0
+I:6  action:010110 -> I:22  action:110: 	0.0
+I:6  action:100110 -> I:38  action:110: 	0.0
+I:7  action:000111 -> I:7  action:111: 	0.0
+I:7  action:000110 -> I:6  action:110: 	0.0
+I:7  action:000101 -> I:5  action:101: 	0.0
+I:7  action:000011 -> I:3  action:011: 	0.0
+I:7  action:001111 -> I:15  action:111: 	0.0
+I:7  action:010111 -> I:23  action:111: 	0.0
+I:7  action:100111 -> I:39  action:111: 	0.0
+I:8  action:001000 -> I:1  action:000: 	0.0
+I:8  action:001001 -> I:9  action:001: 	0.0
+I:8  action:001010 -> I:10  action:010: 	0.0
+I:8  action:001100 -> I:12  action:100: 	0.0
+I:8  action:000000 -> I:0  action:000: 	1.0
+I:8  action:011000 -> I:3  action:000: 	0.0
+I:8  action:101000 -> I:5  action:000: 	0.0
+I:9  action:001001 -> I:9  action:001: 	0.0
+I:9  action:001000 -> I:1  action:000: 	0.0
+I:9  action:001011 -> I:11  action:011: 	0.0
+I:9  action:001101 -> I:13  action:101: 	0.0
+I:9  action:000001 -> I:1  action:001: 	0.0
+I:9  action:011001 -> I:11  action:001: 	1.0
+I:9  action:101001 -> I:13  action:001: 	0.0
+I:10  action:001010 -> I:10  action:010: 	0.10101010101010101
+I:10  action:001011 -> I:11  action:011: 	0.0
+I:10  action:001000 -> I:1  action:000: 	0.0
+I:10  action:001110 -> I:14  action:110: 	0.11616161616161612
+I:10  action:000010 -> I:2  action:010: 	0.0
+I:10  action:011010 -> I:19  action:010: 	0.08585858585858586
+I:10  action:101010 -> I:21  action:010: 	0.0
+I:11  action:001011 -> I:11  action:011: 	0.0
+I:11  action:001010 -> I:10  action:010: 	0.0
+I:11  action:001001 -> I:9  action:001: 	0.0
+I:11  action:001111 -> I:15  action:111: 	0.0
+I:11  action:000011 -> I:3  action:011: 	0.0
+I:11  action:011011 -> I:27  action:011: 	0.8409090909090908
+I:11  action:101011 -> I:29  action:011: 	0.0
+I:12  action:001100 -> I:12  action:100: 	0.0
+I:12  action:001101 -> I:13  action:101: 	0.022727272727272783
+I:12  action:001110 -> I:14  action:110: 	0.0
+I:12  action:001000 -> I:1  action:000: 	0.0
+I:12  action:000100 -> I:4  action:100: 	0.0
+I:12  action:011100 -> I:28  action:100: 	0.0
+I:12  action:101100 -> I:37  action:100: 	0.0
+I:13  action:001101 -> I:13  action:101: 	0.05681818181818175
+I:13  action:001100 -> I:12  action:100: 	0.0
+I:13  action:001111 -> I:15  action:111: 	0.4545454545454549
+I:13  action:001001 -> I:9  action:001: 	0.0
+I:13  action:000101 -> I:5  action:101: 	0.0
+I:13  action:011101 -> I:29  action:101: 	0.0
+I:13  action:101101 -> I:45  action:101: 	0.45941558441558406
+I:14  action:001110 -> I:14  action:110: 	0.2159090909090911
+I:14  action:001111 -> I:15  action:111: 	0.0
+I:14  action:001100 -> I:12  action:100: 	0.0
+I:14  action:001010 -> I:10  action:010: 	0.0
+I:14  action:000110 -> I:6  action:110: 	0.0
+I:14  action:011110 -> I:30  action:110: 	0.46969696969696956
+I:14  action:101110 -> I:46  action:110: 	0.31439393939393934
+I:15  action:001111 -> I:15  action:111: 	0.3075757575757573
+I:15  action:001110 -> I:14  action:110: 	0.0
+I:15  action:001101 -> I:13  action:101: 	0.0
+I:15  action:001011 -> I:11  action:011: 	0.0
+I:15  action:000111 -> I:7  action:111: 	0.0
+I:15  action:011111 -> I:31  action:111: 	0.0
+I:15  action:101111 -> I:47  action:111: 	0.4196969696969698
+I:16  action:010000 -> I:2  action:000: 	1.0
+I:16  action:010001 -> I:10  action:001: 	0.0
+I:16  action:010010 -> I:18  action:010: 	0.0
+I:16  action:010100 -> I:20  action:100: 	0.0
+I:16  action:011000 -> I:3  action:000: 	0.0
+I:16  action:000000 -> I:0  action:000: 	0.0
+I:16  action:110000 -> I:6  action:000: 	0.0
+I:17  action:010001 -> I:10  action:001: 	0.0
+I:17  action:010000 -> I:2  action:000: 	0.0
+I:17  action:010011 -> I:19  action:011: 	0.0
+I:17  action:010101 -> I:21  action:101: 	0.0
+I:17  action:011001 -> I:11  action:001: 	0.0
+I:17  action:000001 -> I:1  action:001: 	0.0
+I:17  action:110001 -> I:14  action:001: 	0.0
+I:18  action:010010 -> I:18  action:010: 	0.0
+I:18  action:010011 -> I:19  action:011: 	0.0
+I:18  action:010000 -> I:2  action:000: 	0.0
+I:18  action:010110 -> I:22  action:110: 	0.0
+I:18  action:011010 -> I:19  action:010: 	0.0
+I:18  action:000010 -> I:2  action:010: 	0.0
+I:18  action:110010 -> I:22  action:010: 	0.0
+I:19  action:010011 -> I:19  action:011: 	0.0
+I:19  action:010010 -> I:18  action:010: 	0.0
+I:19  action:010001 -> I:10  action:001: 	0.0
+I:19  action:010111 -> I:23  action:111: 	0.0
+I:19  action:011011 -> I:27  action:011: 	0.0
+I:19  action:000011 -> I:3  action:011: 	0.0
+I:19  action:110011 -> I:30  action:011: 	0.0
+I:20  action:010100 -> I:20  action:100: 	0.0
+I:20  action:010101 -> I:21  action:101: 	0.0
+I:20  action:010110 -> I:22  action:110: 	0.0
+I:20  action:010000 -> I:2  action:000: 	0.0
+I:20  action:011100 -> I:28  action:100: 	0.0
+I:20  action:000100 -> I:4  action:100: 	0.0
+I:20  action:110100 -> I:38  action:100: 	0.0
+I:21  action:010101 -> I:21  action:101: 	1.0
+I:21  action:010100 -> I:20  action:100: 	0.0
+I:21  action:010111 -> I:23  action:111: 	0.0
+I:21  action:010001 -> I:10  action:001: 	0.0
+I:21  action:011101 -> I:29  action:101: 	0.0
+I:21  action:000101 -> I:5  action:101: 	0.0
+I:21  action:110101 -> I:46  action:101: 	0.0
+I:22  action:010110 -> I:22  action:110: 	0.0
+I:22  action:010111 -> I:23  action:111: 	1.0
+I:22  action:010100 -> I:20  action:100: 	0.0
+I:22  action:010010 -> I:18  action:010: 	0.0
+I:22  action:011110 -> I:30  action:110: 	0.0
+I:22  action:000110 -> I:6  action:110: 	0.0
+I:22  action:110110 -> I:54  action:110: 	0.0
+I:23  action:010111 -> I:23  action:111: 	1.0
+I:23  action:010110 -> I:22  action:110: 	0.0
+I:23  action:010101 -> I:21  action:101: 	0.0
+I:23  action:010011 -> I:19  action:011: 	0.0
+I:23  action:011111 -> I:31  action:111: 	0.0
+I:23  action:000111 -> I:7  action:111: 	0.0
+I:23  action:110111 -> I:55  action:111: 	0.0
+I:24  action:011000 -> I:3  action:000: 	0.0
+I:24  action:011001 -> I:11  action:001: 	0.0
+I:24  action:011010 -> I:19  action:010: 	0.0
+I:24  action:011100 -> I:28  action:100: 	0.0
+I:24  action:010000 -> I:2  action:000: 	1.0
+I:24  action:001000 -> I:1  action:000: 	0.0
+I:24  action:111000 -> I:7  action:000: 	0.0
+I:25  action:011001 -> I:11  action:001: 	0.0
+I:25  action:011000 -> I:3  action:000: 	0.0
+I:25  action:011011 -> I:27  action:011: 	0.0
+I:25  action:011101 -> I:29  action:101: 	0.0
+I:25  action:010001 -> I:10  action:001: 	0.0
+I:25  action:001001 -> I:9  action:001: 	0.0
+I:25  action:111001 -> I:15  action:001: 	0.0
+I:26  action:011010 -> I:19  action:010: 	0.0
+I:26  action:011011 -> I:27  action:011: 	0.0
+I:26  action:011000 -> I:3  action:000: 	0.0
+I:26  action:011110 -> I:30  action:110: 	0.0
+I:26  action:010010 -> I:18  action:010: 	1.0
+I:26  action:001010 -> I:10  action:010: 	0.0
+I:26  action:111010 -> I:23  action:010: 	0.0
+I:27  action:011011 -> I:27  action:011: 	1.0
+I:27  action:011010 -> I:19  action:010: 	0.0
+I:27  action:011001 -> I:11  action:001: 	0.0
+I:27  action:011111 -> I:31  action:111: 	0.0
+I:27  action:010011 -> I:19  action:011: 	0.0
+I:27  action:001011 -> I:11  action:011: 	0.0
+I:27  action:111011 -> I:31  action:011: 	0.0
+I:28  action:011100 -> I:28  action:100: 	0.0
+I:28  action:011101 -> I:29  action:101: 	0.0
+I:28  action:011110 -> I:30  action:110: 	0.0
+I:28  action:011000 -> I:3  action:000: 	0.0
+I:28  action:010100 -> I:20  action:100: 	0.0
+I:28  action:001100 -> I:12  action:100: 	0.0
+I:28  action:111100 -> I:39  action:100: 	0.0
+I:29  action:011101 -> I:29  action:101: 	1.0
+I:29  action:011100 -> I:28  action:100: 	0.0
+I:29  action:011111 -> I:31  action:111: 	0.0
+I:29  action:011001 -> I:11  action:001: 	0.0
+I:29  action:010101 -> I:21  action:101: 	0.0
+I:29  action:001101 -> I:13  action:101: 	0.0
+I:29  action:111101 -> I:47  action:101: 	0.0
+I:30  action:011110 -> I:30  action:110: 	0.0
+I:30  action:011111 -> I:31  action:111: 	0.0
+I:30  action:011100 -> I:28  action:100: 	0.0
+I:30  action:011010 -> I:19  action:010: 	0.0
+I:30  action:010110 -> I:22  action:110: 	1.0
+I:30  action:001110 -> I:14  action:110: 	0.0
+I:30  action:111110 -> I:55  action:110: 	0.0
+I:31  action:011111 -> I:31  action:111: 	0.0
+I:31  action:011110 -> I:30  action:110: 	0.0
+I:31  action:011101 -> I:29  action:101: 	0.0
+I:31  action:011011 -> I:27  action:011: 	0.0
+I:31  action:010111 -> I:23  action:111: 	0.0
+I:31  action:001111 -> I:15  action:111: 	0.0
+I:31  action:111111 -> I:63  action:111: 	0.0
+I:32  action:100000 -> I:4  action:000: 	0.0
+I:32  action:100001 -> I:12  action:001: 	1.0
+I:32  action:100010 -> I:20  action:010: 	0.0
+I:32  action:100100 -> I:36  action:100: 	0.0
+I:32  action:101000 -> I:5  action:000: 	0.0
+I:32  action:110000 -> I:6  action:000: 	0.0
+I:32  action:000000 -> I:0  action:000: 	0.0
+I:33  action:100001 -> I:12  action:001: 	1.0
+I:33  action:100000 -> I:4  action:000: 	0.0
+I:33  action:100011 -> I:28  action:011: 	0.0
+I:33  action:100101 -> I:37  action:101: 	0.0
+I:33  action:101001 -> I:13  action:001: 	0.0
+I:33  action:110001 -> I:14  action:001: 	0.0
+I:33  action:000001 -> I:1  action:001: 	0.0
+I:34  action:100010 -> I:20  action:010: 	0.2962962962962963
+I:34  action:100011 -> I:28  action:011: 	0.0
+I:34  action:100000 -> I:4  action:000: 	0.4074074074074072
+I:34  action:100110 -> I:38  action:110: 	0.2592592592592593
+I:34  action:101010 -> I:21  action:010: 	0.0
+I:34  action:110010 -> I:22  action:010: 	0.0
+I:34  action:000010 -> I:2  action:010: 	0.0
+I:35  action:100011 -> I:28  action:011: 	0.0
+I:35  action:100010 -> I:20  action:010: 	0.0
+I:35  action:100001 -> I:12  action:001: 	0.0
+I:35  action:100111 -> I:39  action:111: 	0.0
+I:35  action:101011 -> I:29  action:011: 	0.0
+I:35  action:110011 -> I:30  action:011: 	0.0
+I:35  action:000011 -> I:3  action:011: 	0.0
+I:36  action:100100 -> I:36  action:100: 	1.0
+I:36  action:100101 -> I:37  action:101: 	0.0
+I:36  action:100110 -> I:38  action:110: 	0.0
+I:36  action:100000 -> I:4  action:000: 	0.0
+I:36  action:101100 -> I:37  action:100: 	0.0
+I:36  action:110100 -> I:38  action:100: 	0.0
+I:36  action:000100 -> I:4  action:100: 	0.0
+I:37  action:100101 -> I:37  action:101: 	0.21428571428571425
+I:37  action:100100 -> I:36  action:100: 	0.0
+I:37  action:100111 -> I:39  action:111: 	0.0
+I:37  action:100001 -> I:12  action:001: 	0.7857142857142858
+I:37  action:101101 -> I:45  action:101: 	0.0
+I:37  action:110101 -> I:46  action:101: 	0.0
+I:37  action:000101 -> I:5  action:101: 	0.0
+I:38  action:100110 -> I:38  action:110: 	1.0
+I:38  action:100111 -> I:39  action:111: 	0.0
+I:38  action:100100 -> I:36  action:100: 	0.0
+I:38  action:100010 -> I:20  action:010: 	0.0
+I:38  action:101110 -> I:46  action:110: 	0.0
+I:38  action:110110 -> I:54  action:110: 	0.0
+I:38  action:000110 -> I:6  action:110: 	0.0
+I:39  action:100111 -> I:39  action:111: 	0.0
+I:39  action:100110 -> I:38  action:110: 	0.0
+I:39  action:100101 -> I:37  action:101: 	0.0
+I:39  action:100011 -> I:28  action:011: 	0.0
+I:39  action:101111 -> I:47  action:111: 	0.0
+I:39  action:110111 -> I:55  action:111: 	0.0
+I:39  action:000111 -> I:7  action:111: 	0.0
+I:40  action:101000 -> I:5  action:000: 	1.0
+I:40  action:101001 -> I:13  action:001: 	0.0
+I:40  action:101010 -> I:21  action:010: 	0.0
+I:40  action:101100 -> I:37  action:100: 	0.0
+I:40  action:100000 -> I:4  action:000: 	0.0
+I:40  action:111000 -> I:7  action:000: 	0.0
+I:40  action:001000 -> I:1  action:000: 	0.0
+I:41  action:101001 -> I:13  action:001: 	0.0
+I:41  action:101000 -> I:5  action:000: 	0.0
+I:41  action:101011 -> I:29  action:011: 	0.0
+I:41  action:101101 -> I:45  action:101: 	0.0
+I:41  action:100001 -> I:12  action:001: 	0.0
+I:41  action:111001 -> I:15  action:001: 	0.0
+I:41  action:001001 -> I:9  action:001: 	0.0
+I:42  action:101010 -> I:21  action:010: 	0.0
+I:42  action:101011 -> I:29  action:011: 	0.0
+I:42  action:101000 -> I:5  action:000: 	0.0
+I:42  action:101110 -> I:46  action:110: 	1.0
+I:42  action:100010 -> I:20  action:010: 	0.0
+I:42  action:111010 -> I:23  action:010: 	0.0
+I:42  action:001010 -> I:10  action:010: 	0.0
+I:43  action:101011 -> I:29  action:011: 	0.0
+I:43  action:101010 -> I:21  action:010: 	0.0
+I:43  action:101001 -> I:13  action:001: 	0.0
+I:43  action:101111 -> I:47  action:111: 	0.0
+I:43  action:100011 -> I:28  action:011: 	0.0
+I:43  action:111011 -> I:31  action:011: 	0.0
+I:43  action:001011 -> I:11  action:011: 	0.0
+I:44  action:101100 -> I:37  action:100: 	0.0
+I:44  action:101101 -> I:45  action:101: 	0.0
+I:44  action:101110 -> I:46  action:110: 	0.0
+I:44  action:101000 -> I:5  action:000: 	0.0
+I:44  action:100100 -> I:36  action:100: 	0.0
+I:44  action:111100 -> I:39  action:100: 	0.0
+I:44  action:001100 -> I:12  action:100: 	0.0
+I:45  action:101101 -> I:45  action:101: 	1.0
+I:45  action:101100 -> I:37  action:100: 	0.0
+I:45  action:101111 -> I:47  action:111: 	0.0
+I:45  action:101001 -> I:13  action:001: 	0.0
+I:45  action:100101 -> I:37  action:101: 	0.0
+I:45  action:111101 -> I:47  action:101: 	0.0
+I:45  action:001101 -> I:13  action:101: 	0.0
+I:46  action:101110 -> I:46  action:110: 	1.0
+I:46  action:101111 -> I:47  action:111: 	0.0
+I:46  action:101100 -> I:37  action:100: 	0.0
+I:46  action:101010 -> I:21  action:010: 	0.0
+I:46  action:100110 -> I:38  action:110: 	0.0
+I:46  action:111110 -> I:55  action:110: 	0.0
+I:46  action:001110 -> I:14  action:110: 	0.0
+I:47  action:101111 -> I:47  action:111: 	1.0
+I:47  action:101110 -> I:46  action:110: 	0.0
+I:47  action:101101 -> I:45  action:101: 	0.0
+I:47  action:101011 -> I:29  action:011: 	0.0
+I:47  action:100111 -> I:39  action:111: 	0.0
+I:47  action:111111 -> I:63  action:111: 	0.0
+I:47  action:001111 -> I:15  action:111: 	0.0
+I:48  action:110000 -> I:6  action:000: 	0.0
+I:48  action:110001 -> I:14  action:001: 	0.0
+I:48  action:110010 -> I:22  action:010: 	0.0
+I:48  action:110100 -> I:38  action:100: 	0.0
+I:48  action:111000 -> I:7  action:000: 	0.0
+I:48  action:100000 -> I:4  action:000: 	0.0
+I:48  action:010000 -> I:2  action:000: 	1.0
+I:49  action:110001 -> I:14  action:001: 	0.0
+I:49  action:110000 -> I:6  action:000: 	0.0
+I:49  action:110011 -> I:30  action:011: 	0.0
+I:49  action:110101 -> I:46  action:101: 	0.0
+I:49  action:111001 -> I:15  action:001: 	0.0
+I:49  action:100001 -> I:12  action:001: 	0.0
+I:49  action:010001 -> I:10  action:001: 	0.0
+I:50  action:110010 -> I:22  action:010: 	0.0
+I:50  action:110011 -> I:30  action:011: 	0.0
+I:50  action:110000 -> I:6  action:000: 	0.0
+I:50  action:110110 -> I:54  action:110: 	0.0
+I:50  action:111010 -> I:23  action:010: 	0.0
+I:50  action:100010 -> I:20  action:010: 	0.0
+I:50  action:010010 -> I:18  action:010: 	0.9059829059829061
+I:51  action:110011 -> I:30  action:011: 	0.0
+I:51  action:110010 -> I:22  action:010: 	0.0
+I:51  action:110001 -> I:14  action:001: 	0.0
+I:51  action:110111 -> I:55  action:111: 	0.0
+I:51  action:111011 -> I:31  action:011: 	0.0
+I:51  action:100011 -> I:28  action:011: 	0.0
+I:51  action:010011 -> I:19  action:011: 	0.0
+I:52  action:110100 -> I:38  action:100: 	0.0
+I:52  action:110101 -> I:46  action:101: 	0.0
+I:52  action:110110 -> I:54  action:110: 	0.0
+I:52  action:110000 -> I:6  action:000: 	0.0
+I:52  action:111100 -> I:39  action:100: 	0.0
+I:52  action:100100 -> I:36  action:100: 	0.0
+I:52  action:010100 -> I:20  action:100: 	0.0
+I:53  action:110101 -> I:46  action:101: 	0.0
+I:53  action:110100 -> I:38  action:100: 	0.0
+I:53  action:110111 -> I:55  action:111: 	0.0
+I:53  action:110001 -> I:14  action:001: 	0.0
+I:53  action:111101 -> I:47  action:101: 	0.0
+I:53  action:100101 -> I:37  action:101: 	0.0
+I:53  action:010101 -> I:21  action:101: 	0.0
+I:54  action:110110 -> I:54  action:110: 	0.0
+I:54  action:110111 -> I:55  action:111: 	0.0
+I:54  action:110100 -> I:38  action:100: 	0.0
+I:54  action:110010 -> I:22  action:010: 	0.0
+I:54  action:111110 -> I:55  action:110: 	0.0
+I:54  action:100110 -> I:38  action:110: 	0.0
+I:54  action:010110 -> I:22  action:110: 	1.0
+I:55  action:110111 -> I:55  action:111: 	1.0
+I:55  action:110110 -> I:54  action:110: 	0.0
+I:55  action:110101 -> I:46  action:101: 	0.0
+I:55  action:110011 -> I:30  action:011: 	0.0
+I:55  action:111111 -> I:63  action:111: 	0.0
+I:55  action:100111 -> I:39  action:111: 	0.0
+I:55  action:010111 -> I:23  action:111: 	0.0
+I:56  action:111000 -> I:7  action:000: 	0.0
+I:56  action:111001 -> I:15  action:001: 	0.0
+I:56  action:111010 -> I:23  action:010: 	0.0
+I:56  action:111100 -> I:39  action:100: 	0.0
+I:56  action:110000 -> I:6  action:000: 	0.0
+I:56  action:101000 -> I:5  action:000: 	0.0
+I:56  action:011000 -> I:3  action:000: 	0.0
+I:57  action:111001 -> I:15  action:001: 	0.0
+I:57  action:111000 -> I:7  action:000: 	0.0
+I:57  action:111011 -> I:31  action:011: 	0.0
+I:57  action:111101 -> I:47  action:101: 	0.0
+I:57  action:110001 -> I:14  action:001: 	0.0
+I:57  action:101001 -> I:13  action:001: 	0.0
+I:57  action:011001 -> I:11  action:001: 	0.0
+I:58  action:111010 -> I:23  action:010: 	0.0
+I:58  action:111011 -> I:31  action:011: 	0.41062801932367166
+I:58  action:111000 -> I:7  action:000: 	0.0
+I:58  action:111110 -> I:55  action:110: 	0.0
+I:58  action:110010 -> I:22  action:010: 	0.0
+I:58  action:101010 -> I:21  action:010: 	0.0
+I:58  action:011010 -> I:19  action:010: 	0.0
+I:59  action:111011 -> I:31  action:011: 	0.0
+I:59  action:111010 -> I:23  action:010: 	0.0
+I:59  action:111001 -> I:15  action:001: 	0.0
+I:59  action:111111 -> I:63  action:111: 	0.0
+I:59  action:110011 -> I:30  action:011: 	0.0
+I:59  action:101011 -> I:29  action:011: 	0.0
+I:59  action:011011 -> I:27  action:011: 	1.0
+I:60  action:111100 -> I:39  action:100: 	0.9565217391304346
+I:60  action:111101 -> I:47  action:101: 	0.0
+I:60  action:111110 -> I:55  action:110: 	0.0
+I:60  action:111000 -> I:7  action:000: 	0.0
+I:60  action:110100 -> I:38  action:100: 	0.0
+I:60  action:101100 -> I:37  action:100: 	0.0
+I:60  action:011100 -> I:28  action:100: 	0.04347826086956544
+I:61  action:111101 -> I:47  action:101: 	0.0
+I:61  action:111100 -> I:39  action:100: 	0.0
+I:61  action:111111 -> I:63  action:111: 	0.0
+I:61  action:111001 -> I:15  action:001: 	0.0
+I:61  action:110101 -> I:46  action:101: 	0.0
+I:61  action:101101 -> I:45  action:101: 	0.0
+I:61  action:011101 -> I:29  action:101: 	0.0
+I:62  action:111110 -> I:55  action:110: 	0.0
+I:62  action:111111 -> I:63  action:111: 	0.0
+I:62  action:111100 -> I:39  action:100: 	0.0
+I:62  action:111010 -> I:23  action:010: 	0.0
+I:62  action:110110 -> I:54  action:110: 	1.0
+I:62  action:101110 -> I:46  action:110: 	0.0
+I:62  action:011110 -> I:30  action:110: 	0.0
+I:63  action:111111 -> I:63  action:111: 	1.0
+I:63  action:111110 -> I:55  action:110: 	0.0
+I:63  action:111101 -> I:47  action:101: 	0.0
+I:63  action:111011 -> I:31  action:011: 	0.0
+I:63  action:110111 -> I:55  action:111: 	0.0
+I:63  action:101111 -> I:47  action:111: 	0.0
+I:63  action:011111 -> I:31  action:111: 	0.0

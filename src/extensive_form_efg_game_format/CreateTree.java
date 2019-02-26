@@ -71,7 +71,7 @@ public class CreateTree {
 			  sumR += realFeatureDistribution[i];
 			  sumHp += honeypotFeatureDistribution[i];
 		 }
-		System.out.println(sumR + " : " + sumHp);
+		System.out.println(".... " + sumR + " : " + sumHp);
 		//setP2InformationSet();
 		setModificationCost();
 		
@@ -95,8 +95,12 @@ public class CreateTree {
 	public void setModificationCost() {
 
 		
-			modificationCost.add(3.0); // HP system modification cost
-			modificationCost.add(6.0); // real modification cost
+			modificationCost.add(0.1); // HP system modification cost
+			modificationCost.add(0.1); // HP system modification cost
+			modificationCost.add(0.1); // real modification cost
+			modificationCost.add(0.1); // real system modification cost
+			modificationCost.add(0.1); // real modification cost
+			modificationCost.add(0.1); // real system modification cost
 		}
 	
 	public void setProbability(int numberOfFeature) {
@@ -122,15 +126,15 @@ public class CreateTree {
 		} else if (Utils.REAL_HOST_FEATURES_NUM == 2) {
 
 
-			realSystemProbabilities.put("00", 0.45);
-			realSystemProbabilities.put("01", 0.17);
-			realSystemProbabilities.put("10", 0.12);
-			realSystemProbabilities.put("11", 0.25);
+			realSystemProbabilities.put("00", 0.07);
+			realSystemProbabilities.put("01", 0.01);
+			realSystemProbabilities.put("10", 0.75);
+			realSystemProbabilities.put("11", 0.17);
 
-			honeypotProbabilites.put("00", 0.41);
-			honeypotProbabilites.put("01", 0.32);
+			honeypotProbabilites.put("00", 0.04);
+			honeypotProbabilites.put("01", 0.22);
 			honeypotProbabilites.put("10", 0.08);
-			honeypotProbabilites.put("11", 0.19);
+			honeypotProbabilites.put("11", 0.65);
 		} else if (Utils.REAL_HOST_FEATURES_NUM == 3) {
 
 			realSystemProbabilities.put("000", 0.1); 
@@ -200,68 +204,68 @@ public class CreateTree {
 					);
 		} else if (Utils.REAL_HOST_FEATURES_NUM == 2) {
 
-			realSystemValues.put("00", 10.0);
-			realSystemValues.put("01", 10.0); 
-			realSystemValues.put("10", 10.0);
-			realSystemValues.put("11", 10.0);
+			realSystemValues.put("00", 1.0);
+			realSystemValues.put("01", 1.0); 
+			realSystemValues.put("10", 1.0);
+			realSystemValues.put("11", 1.0);
 
-			honeypotValues.put("00", 10.0);
-			honeypotValues.put("01", 10.0);
-			honeypotValues.put("10", 10.0);
-			honeypotValues.put("11", 10.0);
+			honeypotValues.put("00", 1.0);
+			honeypotValues.put("01", 1.0);
+			honeypotValues.put("10", 1.0);
+			honeypotValues.put("11", 1.0);
 		} else if (Utils.REAL_HOST_FEATURES_NUM == 3) {
-			realSystemValues.put("000", 500.);
-			realSystemValues.put("001", 500.);
-			realSystemValues.put("010", 500.); 
-			realSystemValues.put("011", 500.);
-			realSystemValues.put("100", 500.);
-			realSystemValues.put("101", 500.);
-			realSystemValues.put("110", 500.);
-			realSystemValues.put("111", 500.);
+			realSystemValues.put("000", 1.);
+			realSystemValues.put("001", 1.);
+			realSystemValues.put("010", 1.); 
+			realSystemValues.put("011", 1.);
+			realSystemValues.put("100", 1.);
+			realSystemValues.put("101", 1.);
+			realSystemValues.put("110", 1.);
+			realSystemValues.put("111", 1.);
 
-			honeypotValues.put("000", 100.);
-			honeypotValues.put("001", 100.);
-			honeypotValues.put("010", 100.);
-			honeypotValues.put("011", 100.);
-			honeypotValues.put("100", 100.);
-			honeypotValues.put("101", 100.);
-			honeypotValues.put("110", 100.);
-			honeypotValues.put("111", 100.);
+			honeypotValues.put("000", 1.);
+			honeypotValues.put("001", 1.);
+			honeypotValues.put("010", 1.);
+			honeypotValues.put("011", 1.);
+			honeypotValues.put("100", 1.);
+			honeypotValues.put("101", 1.);
+			honeypotValues.put("110", 1.);
+			honeypotValues.put("111", 1.);
 		} else if (Utils.REAL_HOST_FEATURES_NUM == 4) {
 
-			realSystemValues.put("0000", 500.);
-			realSystemValues.put("0001", 500.);
-			realSystemValues.put("0010", 500.);
-			realSystemValues.put("0011", 500.);
-			realSystemValues.put("0100", 500.);
-			realSystemValues.put("0101", 500.);
-			realSystemValues.put("0110", 500.);
-			realSystemValues.put("0111", 500.);
-			realSystemValues.put("1000", 500.);
-			realSystemValues.put("1001", 500.);
-			realSystemValues.put("1010", 500.);
-			realSystemValues.put("1011", 500.);
-			realSystemValues.put("1100", 500.);
-			realSystemValues.put("1101", 500.);
-			realSystemValues.put("1110", 500.);
-			realSystemValues.put("1111", 500.);
+			realSystemValues.put("0000", 10.);
+			realSystemValues.put("0001", 10.);
+			realSystemValues.put("0010", 10.);
+			realSystemValues.put("0011", 10.);
+			realSystemValues.put("0100", 10.);
+			realSystemValues.put("0101", 10.);
+			realSystemValues.put("0110", 10.);
+			realSystemValues.put("0111", 10.);
+			realSystemValues.put("1000", 10.);
+			realSystemValues.put("1001", 10.);
+			realSystemValues.put("1010", 10.);
+			realSystemValues.put("1011", 10.);
+			realSystemValues.put("1100", 10.);
+			realSystemValues.put("1101", 10.);
+			realSystemValues.put("1110", 10.);
+			realSystemValues.put("1111", 10.);
 
-			honeypotValues.put("0000", 100.);
-			honeypotValues.put("0001", 100.);
-			honeypotValues.put("0010", 100.);
-			honeypotValues.put("0011", 100.);
-			honeypotValues.put("0100", 100.);
-			honeypotValues.put("0101", 100.);
-			honeypotValues.put("0110", 100.);
-			honeypotValues.put("0111", 100.);
-			honeypotValues.put("1000", 100.);
-			honeypotValues.put("1001", 100.);
-			honeypotValues.put("1010", 100.);
-			honeypotValues.put("1011", 100.);
-			honeypotValues.put("1100", 100.);
-			honeypotValues.put("1101", 100.);
-			honeypotValues.put("1110", 100.);
-			honeypotValues.put("1111", 100.);
+			honeypotValues.put("0000", 5.);
+			honeypotValues.put("0001", 5.);
+			honeypotValues.put("0010", 5.);
+			honeypotValues.put("0011", 5.);
+			honeypotValues.put("0100", 5.);
+			honeypotValues.put("0101", 5.);
+			honeypotValues.put("0110", 5.);
+			honeypotValues.put("0111", 5.);
+			honeypotValues.put("1000", 5.);
+			honeypotValues.put("1001", 5.);
+			honeypotValues.put("1010", 5.);
+			honeypotValues.put("1011", 5.);
+			honeypotValues.put("1100", 5.);
+			honeypotValues.put("1101", 5.);
+			honeypotValues.put("1110", 5.);
+			honeypotValues.put("1111", 5.);
 		}
 	}
 	
@@ -348,8 +352,10 @@ public class CreateTree {
 				numberOfFeatures = Utils.TOTAL_FEATUES_NUMBER_IN_GAME;
 				Utils.numOfDefenderActions = Utils.TOTAL_FEATUES_NUMBER_IN_GAME + 1;
 			}else if(isModifyRealSystem) {
-				numberOfFeatures = Utils.TOTAL_FEATUES_NUMBER_IN_GAME;
-				startIndex = Utils.REAL_HOST_FEATURES_NUM*Utils.TOTAL_NUM_OF_REAL_HOST;
+				//numberOfFeatures = Utils.TOTAL_FEATUES_NUMBER_IN_GAME;
+				//startIndex = Utils.REAL_HOST_FEATURES_NUM*Utils.TOTAL_NUM_OF_REAL_HOST;
+				numberOfFeatures = 0;
+				Utils.numOfDefenderActions = 1;
 			}else {
 				numberOfFeatures =Utils.REAL_HOST_FEATURES_NUM;
 			}
@@ -361,10 +367,12 @@ public class CreateTree {
 				String strFormat = "%"+ (Utils.TOTAL_FEATUES_NUMBER_IN_GAME ) +"s";
 				String flippedStr = String.format(strFormat, Integer.toBinaryString(flipFeature)).replace(' ', '0');
 				actions.add(flippedStr);
+				flipPositions.add(j);
+				/*
 				if( j < Utils.REAL_HOST_FEATURES_NUM*Utils.TOTAL_NUM_OF_REAL_HOST)
 					flipPositions.add(0);
 				else
-					flipPositions.add(1);
+					flipPositions.add(1);*/
 			}
 
 			createGambitFile.createPlayerNode(Utils.PLAYER_NODE_NAME, Utils.PLAYER_ONE, infoNo,

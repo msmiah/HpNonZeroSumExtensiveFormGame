@@ -614,7 +614,7 @@ public class DefenderSequenceFormLPApproximationSolver<E> extends ZeroSumGameSol
 							"I:" + node.getInformationSet() + "  action:" + action.getName());
 					opponentStrategyVarsByInformationSet[node.getInformationSet()].put(action.getName(), v);
 					opponentStrategyVarsBySequenceId[sequenceId] = v;
-					p2InformationSetBySequenceId[sequenceId] = node.getInformationSet();
+					//p2InformationSetBySequenceId[sequenceId] = node.getInformationSet();
 					// add 1*v to the sum over all the sequences at the information set
 					sum.addTerm(1, v);
 					
